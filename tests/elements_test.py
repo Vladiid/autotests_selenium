@@ -8,4 +8,3 @@ def test(driver):
     page.open()
     time.sleep(3)
 
-    1
