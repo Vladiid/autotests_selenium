@@ -14,5 +14,4 @@ class TestElements:
             assert full_name == output_name
             assert email == output_email
             assert current_address == output_cur_addr
-            assert permanent_address == output_per_addr
-            time.sleep(5)
+            time.sleep(2)
