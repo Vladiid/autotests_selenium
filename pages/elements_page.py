@@ -1,4 +1,6 @@
+import random
 import time
+import random
 
 from generator.generator import generated_person
 from locators.elements_page_locators import TextBoxPageLocators, CheckBoxPageLocators
@@ -33,3 +35,12 @@ class TextBoxPage(BasePage):
 
 class CheckBoxPage(BasePage):
     locators = CheckBoxPageLocators()
+
+    def open_full_list(self):
+        self.element_is_visible(self.locators.EXPAND_ALL_BUTTON).click()
+
+    def click_random_checkbox(self):
+        item_list = self.elements_are_visible(self.locators.ITEM_LIST)
+        item = item_list[random.randint(0, 15)]
+        self.go_to_element(item)
+        item.click()

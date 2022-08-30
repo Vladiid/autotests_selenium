@@ -1,2 +1,2 @@
-TEX_BOX_URL = "https://demoqa.com/text-box"
-CHECK_BOX_URL = "https://demoqa.com/checkbox"
+TEXTBOX_URL = "https://demoqa.com/text-box"
+CHECKBOX_URL = "https://demoqa.com/checkbox"
