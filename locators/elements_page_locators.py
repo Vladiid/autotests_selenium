@@ -16,3 +16,4 @@ class TextBoxPageLocators:
 
 
 class CheckBoxPageLocators:
+    pass

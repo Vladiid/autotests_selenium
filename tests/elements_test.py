@@ -1,5 +1,6 @@
 import time
 
+from configuration import TEX_BOX_URL, CHECK_BOX_URL
 from pages.elements_page import TextBoxPage, CheckBoxPage
 
 
@@ -7,7 +8,7 @@ class TestElements:
     class TestTextBox:
 
         def test_text_box(self, driver):
-            text_box_page = TextBoxPage(driver, 'https://demoqa.com/text-box')
+            text_box_page = TextBoxPage(driver, TEX_BOX_URL)
             text_box_page.open()
             full_name, email, current_address, permanent_address = text_box_page.fill_all_fields()
             output_name, output_email, output_cur_addr, output_per_addr = text_box_page.check_filled_form()
@@ -18,5 +19,5 @@ class TestElements:
 
     class TestCheckBox:
         def test_check_box(self, driver):
-            check_box_page = CheckBoxPage(driver, 'https://demoqa.com/checkbox')
+            check_box_page = CheckBoxPage(driver, CHECK_BOX_URL)
             check_box_page.open()
