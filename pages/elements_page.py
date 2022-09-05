@@ -1,4 +1,3 @@
-import random
 import time
 import random
 
@@ -41,7 +40,7 @@ class CheckBoxPage(BasePage):
 
     def click_random_checkbox(self):
         item_list = self.elements_are_visible(self.locators.ITEM_LIST)
-        count = 20
+        count = 15
         while count != 0:
             item = item_list[random.randint(1, 15)]
             if count > 0:
