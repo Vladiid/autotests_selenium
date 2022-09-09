@@ -63,4 +63,4 @@ class CheckBoxPage(BasePage):
         data = []
         for item in result_list:
             data.append(item.text)
-        return str(data).replace(' ', '').replace('doc', '').replace('.', '').lower()
+        return str(data).replace(' ', '').lower()
