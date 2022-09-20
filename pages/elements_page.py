@@ -2,7 +2,8 @@ import time
 import random
 
 from generator.generator import generated_person
-from locators.elements_page_locators import TextBoxPageLocators, CheckBoxPageLocators, RadioButtonPageLocators
+from locators.elements_page_locators import TextBoxPageLocators, CheckBoxPageLocators, RadioButtonPageLocators, \
+    ButtonsPageLocators
 from pages.base_page import BasePage
 
 
@@ -70,11 +71,22 @@ class RadioButtonPage(BasePage):
     locators = RadioButtonPageLocators()
 
     def click_on_the_radio_button(self, choice):
-        choices = {'yes': self.locators.YES_RADIOBUTTON,
-                   'impressive': self.locators.IMPRESSIVE_RADIOBUTTON,
-                   'no': self.locators.NO_RADIOBUTTON}
+        choices = {'Yes': self.locators.YES_RADIOBUTTON,
+                   'Impressive': self.locators.IMPRESSIVE_RADIOBUTTON,
+                   'No': self.locators.NO_RADIOBUTTON}
 
         self.element_is_visible(choices[choice]).click()
 
     def get_output_result(self):
         return self.element_is_present(self.locators.OUTPUT_RESULT)
+
+
+class ButtonsPage(BasePage):
+    locators = ButtonsPageLocators()
+
+    def click_on_different_button(self, type_click):
+        if type_click == "double":
+
+        if type_click == "right":
+
+        if type_click == "click":

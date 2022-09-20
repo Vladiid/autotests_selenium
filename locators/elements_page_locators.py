@@ -28,3 +28,14 @@ class RadioButtonPageLocators:
     IMPRESSIVE_RADIOBUTTON = (By.CSS_SELECTOR, "label[class='custom-control-label'][for='impressiveRadio']")
     NO_RADIOBUTTON = (By.CSS_SELECTOR, "label[class='custom-control-label'][for='noRadio']")
     OUTPUT_RESULT = (By.CSS_SELECTOR, "span[class='text-success']")
+
+
+class ButtonsPageLocators:
+    DOUBLE_CLICK_BUTTON = (By.CSS_SELECTOR, "button[id='doubleClickBtn']")
+    RIGHT_CLICK_BUTTON = (By.CSS_SELECTOR, "button[id='rightClickBtn']")
+    CLICK_ME_BUTTON = (By.CSS_SELECTOR, "button[id='kPGeo']")
+
+    # result
+    SUCCESS_DOUBLE = (By.CSS_SELECTOR, "p[id='doubleClickMessage']")
+    SUCCES_RIGHT = (By.CSS_SELECTOR, "p[id='rightClickMessage']")
+    SUCCES_CLICK_ME = (By.CSS_SELECTOR, "p[id='dynamicClickMessage']")
