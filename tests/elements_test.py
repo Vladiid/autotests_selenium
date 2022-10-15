@@ -1,7 +1,10 @@
 import time
 
 from configuration import TEXTBOX_URL, CHECKBOX_URL, RDIO_BUTTON_URL, BUTTONS_URL
-from pages.elements_page import TextBoxPage, CheckBoxPage, RadioButtonPage, ButtonsPage
+from pages.elements_page import TextBoxPage, CheckBoxPage, RadioButtonPage
+
+
+# ButtonsPage
 
 
 class TestElements:
