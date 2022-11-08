@@ -19,7 +19,7 @@ class TestElements:
             assert email == output_email
             assert current_address == output_cur_addr
             assert permanent_address == output_per_addr
-            time.sleep(5)
+            time.sleep(2)
 
     class TestCheckBox:
         def test_check_box(self, driver):
@@ -46,7 +46,7 @@ class TestElements:
             assert output_impressive == 'Impressive', "'Impressive' have not been selected"
             assert output_no == 'No', "'No' have not been selected"
 
-    class TestButtonsPage:
-        def test_different_click_on_the_buttons(self, driver):
-            button_page = ButtonsPage(driver, BUTTONS_URL)
-            button_page.open()
+    # class TestButtonsPage:
+    #     def test_different_click_on_the_buttons(self, driver):
+    #         button_page = ButtonsPage(driver, BUTTONS_URL)
+    #         button_page.open()
