@@ -46,7 +46,7 @@ class TestElements:
             assert output_impressive == 'Impressive', "'Impressive' have not been selected"
             assert output_no == 'No', "'No' have not been selected"
 
-    # class TestButtonsPage:
-    #     def test_different_click_on_the_buttons(self, driver):
-    #         button_page = ButtonsPage(driver, BUTTONS_URL)
-    #         button_page.open()
+    class TestButtonsPage:
+        def test_different_click_on_the_buttons(self, driver):
+            button_page = ButtonsPage(driver, BUTTONS_URL)
+            button_page.open()
